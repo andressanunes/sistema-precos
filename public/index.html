@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clientes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Clientes</h1>
+
+<form id="form-cliente">
+  <input type="text" id="cnpj" placeholder="CNPJ" required />
+  <input type="text" id="razao" placeholder="Razão Social" required />
+  <button type="submit">Cadastrar Cliente</button>
+</form>
+
+<ul id="lista-clientes"></ul>
+
+<hr />
+<h1>Produtos</h1>
+
+<form id="form-produto">
+  <input type="text" id="sku" placeholder="SKU" required />
+  <input type="text" id="descricao" placeholder="Descrição" required />
+  <button type="submit">Cadastrar Produto</button>
+</form>
+
+<ul id="lista-produtos"></ul>
+
+<hr />
+<h1>Condições de Pagamento</h1>
+
+<form id="form-condpagto">
+  <input type="text" id="descricao-cond" placeholder="Descrição" required />
+  <input type="text" id="dias-cond" placeholder="Dias (ex: 30,60,90)" required />
+  <button type="submit">Cadastrar Condição</button>
+</form>
+
+<ul id="lista-condicoes"></ul>
+
+<hr />
+<h1>Tabela de Preços</h1>
+
+<form id="form-preco">
+  <select id="cliente-select" required></select>
+  <select id="produto-select" required></select>
+  <select id="condicao-select" required></select>
+  <input type="number" id="preco" placeholder="Preço" step="0.01" required />
+  <input type="date" id="data-inicio" required />
+  <button type="submit">Cadastrar Preço</button>
+</form>
+
+<ul id="lista-precos"></ul>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
