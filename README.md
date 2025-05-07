@@ -40,24 +40,24 @@ sistema-precos/
 ├── .env # Variáveis de ambiente
 ├── package.json
 └── README.md
- ## ⚙️ Configuração
 
-### 1. Clone o projeto
-
----
 
 ## ⚙️ Configuração
 
 ### 1. Clone o projeto
+
 ### 2. Instale as dependencias
 npm install
+
 ### 3. Crie o arquivo env.
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=
 DB_NAME=pagamentos
 
+
 ### 4. Configure o banco de dados MySQL
+
 Use este script para criar as tabelas (adapte se necessário):
 CREATE DATABASE IF NOT EXISTS pagamentos;
 USE pagamentos;
@@ -94,6 +94,7 @@ CREATE TABLE preco_cliente (
 
 ### Como rodar
 node server.js
+
 A aplicação será aberta automaticamente no navegador em: http://localhost:3000
 
 
